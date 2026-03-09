@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            justify-content: center;
+            text-align: center;
+        }
+        nav, section, main, article, footer {
+            padding: 10px;
+        }
+        nav {
+            background-color: lightblue;
+        }
+        section {
+            background-color: lightgreen;
+        }   
+        main {
+            background-color: lightyellow;
+            display: flex;
+            justify-content: center;
+            height: 600px;
+        }   
+        aside, #right {
+            background-color: lightgray;
+           border: 1px solid red;
+        }  
+        aside{
+            width: 50%;
+            
+        } 
+        #right{
+            width: 50%;
+        }
+        footer {
+            background-color: lightcoral;
+        }   
+
+    </style>
+</head>
+<body>
+    <nav><p>blok nawigacyjny</p></nav>
+    <main>
+        <aside>
+<p>blok boczny</p>
+        </aside>
+        <section id="right"><p>sekcja prawa</p></section>
+    </main>
+    <footer><p>blok stopki</p></footer>
+</body>
+</html>

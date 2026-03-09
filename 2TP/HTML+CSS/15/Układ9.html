@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            margin: 0;
+        }*{
+           
+            text-align: center;
+
+        }
+#leftright{
+    display: flex;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: #c7ff2b;
+}
+#left, #right{
+    width: 50%;
+    height: 35vh;
+    background-color: #62ff6f;
+}
+main{
+    display: flex;
+    height: 50vh;
+}
+aside{
+    width: 30%;
+height: 50vh;
+background-color: #ff7322;
+}
+footer, header{
+    height: 10vh;
+    background-color: #ff5d5d;
+}
+p{
+    margin: 0;
+}
+    
+
+    </style>
+</head>
+<body>
+    <header>
+<p>blok nagłówkowy</p>
+    </header>
+    <main>
+        <section id="container">
+            <nav>
+<p>blok nawigacyjny</p>
+            </nav>
+            <section id="leftright">
+            <section id="left">
+<p>sekcja lewa</p>
+            </section>
+            <section id="right">
+<p>sekcja prawa</p>
+            </section>
+            </section>
+        </section>
+        <aside>
+<p>blok boczny</p>
+        </aside>
+    </main>
+    <footer>
+        <p>blok stopki</p>
+    </footer>
+</body>
+</html>

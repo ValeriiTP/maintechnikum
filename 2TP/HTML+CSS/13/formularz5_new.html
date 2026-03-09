@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz 5</title>
+</head>
+<body>
+    <form id="printForm" action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="imageFile">Wybierz obraz: </label>
+            <input type="file" id="imageFile" name="imageFile" accept="image/jpeg" required>
+        </div>
+
+        <div>
+            <label for="copies">Liczba Kopii: </label>
+            <input type="number" id="copies" name="copies" min="1" step="1" inputmode="numeric" required>
+        </div>
+
+        <fieldset>
+            <legend>Rodzaj papieru</legend>
+            <div>
+                <input type="radio" id="paperGlossy" name="paperType" value="glossy" checked>
+                <label for="paperGlossy">Papier błyszczący</label>
+            </div>
+            <div>
+                <input type="radio" id="paperMatte" name="paperType" value="matte">
+                <label for="paperMatte">Papier matowy</label>
+            </div>
+        </fieldset>
+
+        <!-- No script or styling required -- the radio inputs share the same name so they are mutually exclusive by default -->
+    </form>
+</body>
+</html>

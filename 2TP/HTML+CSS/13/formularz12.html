@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kalkulator kosztów montażu</h1>
+
+    <div style="display: flex; gap: 20px;">
+        <label>
+            Szerokość pomieszczenia [m]:
+            <input type="number" name="szerokosc">
+        </label>
+
+        <label>
+            Długość pomieszczenia [m]:
+            <input type="number" name="dlugosc">
+        </label>
+    </div>
+    <br>
+    <p>Typ panelu</p>
+    <div>
+        <label>
+            <input type="radio" name="panel" value="laminowane">
+            Panele laminowane
+        </label><br>
+
+        <label>
+            <input type="radio" name="panel" value="winylowe">
+            Panele winylowe
+        </label><br>
+
+        <label>
+            <input type="radio" name="panel" value="deska">
+            Deska podłogowa
+        </label>
+    </div>
+
+    <br>
+
+    <input type="button" value="Oblicz">
+
+    <p id="wynik"></p>
+</body>
+</html>

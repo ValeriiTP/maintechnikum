@@ -1,0 +1,110 @@
+section {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+     padding: 15px;
+     border: 2px darkolivegreen solid;
+     margin-top: 10px;
+     height: 80px;
+}
+div{
+   
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 80px;
+}
+
+
+
+ header  {
+    background-color: darkblue;
+    height: 20vh;
+}
+
+nav {
+    background-color: cadetblue;
+    width: 40%;
+    height: 60vh;
+    float: left;
+}
+
+
+
+main {
+    background-color: #42838b;
+    width: 60%;
+    height: 60vh;
+    float: left;
+}
+
+
+footer {
+    height: 20vh;
+    background-color: #1512be;
+    clear: both;
+} 
+    .o{
+    background-color: rgb(106, 216, 253);
+}
+.d{
+    background-color: rgb(82, 6, 63);
+}
+section {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 15px;
+    border: 2px solid darkolivegreen;
+    margin-top: 10px;
+    height: 80px;
+}
+
+div {
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 80px;
+}
+
+header {
+    background-color: darkblue;
+    height: 20vh;
+}
+
+nav {
+    background-color: cadetblue;
+    width: 40%;
+    height: 60vh;
+    float: left;
+}
+
+main {
+    background-color: #42838b;
+    width: 60%;
+    height: 60vh;
+    float: left;
+}
+
+footer {
+    height: 20vh;
+    background-color: #1512be;
+    clear: both;
+}
+
+.o {
+    background-color: rgb(106, 216, 253);
+}
+.d {
+    background-color: rgb(82, 6, 63);
+}
+.t {
+    background-color: rgb(63, 82, 6);
+}
+.c {
+    background-color: rgb(126, 82, 6);
+}
+.p {
+    background-color: rgb(146, 248, 223);
+}
+.s {
+    background-color: rgb(252, 146, 223);
+}

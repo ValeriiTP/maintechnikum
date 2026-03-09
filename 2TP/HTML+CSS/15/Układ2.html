@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    aside {
+        background-color: lightgray;
+        width: 20%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    header, nav, main, footer {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    header {
+        background-color: lightblue;
+        height: 15%;
+    }
+    nav {
+        background-color: lightgreen;
+        height: 10%;
+    }
+    main {
+        background-color: white;
+        height: 60%;
+    }
+    footer {
+        background-color: lightcoral;
+        height: 15%;
+    }
+</style>
+<body>
+    <aside><p>blok boczny</p></aside>
+    <section>
+        <header><p>Blok nagłówkowy</p></header>
+        <nav><p>blok nawigacyjny</p></nav>
+        <main><p>blok główny</p></main>
+        <footer><p>blok stopki</p></footer>
+    </section>
+</body>
+</html>

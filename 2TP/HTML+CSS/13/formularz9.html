@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Malowanie i gipsowanie</title>
+</head>
+<body>
+
+      <h2>Dla klientów</h2>
+      <form method="post" action="">
+        <label for="pracownicy">Ilu co najmniej pracowników potrzebujesz?</label><br>
+        <input type="number" id="pracownicy" name="pracownicy" min="1" step="1"><br>
+        <button type="submit" >Szukaj firm</button>
+      </form>
+     
+      <div id="wynik-klienci"></div>
+    </section>
+
+    <section>
+      <h2>Dla wykonawców</h2>
+      <form method="post" action="">
+        <label for="lista">Wybierz opcję:</label><br>
+        <select id="lista" name="lista">
+            <option value="malowanie">malowanie</option>
+            <option value="gipsowanie">gipsowanie</option>
+        </select><br>
+
+        <label>
+          <input type="radio" name="rodzaj" value="malowanie" checked>
+          malowanie
+        </label><br>
+
+        <label>
+          <input type="radio" name="rodzaj" value="gipsowanie">
+          gipsowanie
+        </label><br>
+        <button type="submit">Szukaj klientów</button>
+      </form>
+    </section>
+
+</body>
+</html>
