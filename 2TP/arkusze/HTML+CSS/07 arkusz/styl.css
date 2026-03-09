@@ -1,0 +1,52 @@
+td, table, tr, th{
+    border: solid 1px darkgreen;
+   
+}
+table
+{ border-collapse: collapse;
+width: 90%;}
+
+.left table tr:hover{
+    background-color: forestgreen;
+}
+img{
+    width: 90%;
+    height: auto;
+}
+main{
+    display: flex;
+}
+
+.center{
+    overflow: auto;
+}
+
+*{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav, header, footer {
+color: white;
+padding: 2px;
+}
+
+header, footer{
+    background-color: darkgreen;
+}
+nav{
+    background-color: forestgreen;
+}
+
+section{
+    background-color: lightgreen;
+    width: 33.3%;
+    height: 550px;
+    padding-top: 10px;
+}
+body{
+    margin: 0;
+}
+h2{
+    width: 33%;
+    display: inline-block;
+}

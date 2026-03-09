@@ -1,0 +1,99 @@
+body {
+    background-color: #427A43;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #F2E3BB;
+    padding: 15px 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #333;
+}
+
+main {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    gap: 20px;
+    align-items: stretch; 
+}
+
+
+.inputs, table {
+    width: 50%;
+    background-color: #F2E3BB;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.square-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#ilosc {
+    margin-top: 20px;
+    width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+select{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #427A43;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#wynik {
+    margin-top: 20px;
+    background-color: #F2E3BB;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100px;
+}

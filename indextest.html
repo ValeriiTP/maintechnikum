@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+
+    <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="nav-header">
+            <h2 data-i18n="nav-title">МЕНЮ</h2>
+        </div>
+        <nav class="nav-list">
+            <div class="nav-rect active" data-filter="all">
+                <a href="#" data-i18n="nav-all">ВСІ</a>
+            </div>
+            <div class="nav-rect" data-filter="ark">
+                <a href="#">arkusze</a>
+            </div>
+            <div class="nav-rect" data-filter="html">
+                <a href="#">html+css</a>
+            </div>
+            <div class="nav-rect" data-filter="js">
+                <a href="#">java script</a>
+            </div>
+            <div class="nav-rect" data-filter="php">
+                <a href="#">php</a>
+            </div>
+            <div class="nav-rect" data-filter="cpp">
+                <a href="#">c++</a>
+            </div>
+        </nav>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-box">
+                <span class="icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Пошук...">
+            </div>
+            
+            <div class="controls-group">
+                <div class="lang-picker" id="langPicker">
+                    <div class="lang-bg-slider"></div>
+                    <span data-lang="ua" class="lang-item active">UA</span>
+                    <span data-lang="en" class="lang-item">EN</span>
+                    <span data-lang="pl" class="lang-item">PL</span>
+                </div>
+
+                <button class="theme-switch" id="themeBtn">
+                    <div class="theme-icons">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </div>
+                </button>
+            </div>
+        </header>
+
+        <section class="hero-section">
+            <div class="hero-info">
+                <h1 data-i18n="home-title">ГОЛОВНА</h1>
+                <span class="status-badge" data-i18n="latest">ОСТАННЄ</span>
+            </div>
+        </section>
+
+        <div class="apps-list">
+ <!-- example of a project card, you can duplicate and modify it for other projects 
+            <div class="searchable" data-category="ark">
+                <div class="app-grid">
+                    <div class="image-card">
+                        <img src="" alt="Sketch" onerror="this.style.display='none'">
+                        <div class="search-data" style="display: none;">артикул 55021 проєкт 1</div>
+                        
+                        <div class="about-content" style="display: none;">
+                            <h3 class="res-title" data-i18n="proj1-title">ПРОЄКТ: АРТИКУЛ 55021</h3>
+                            <p class="about-text" data-i18n="proj1-desc">Це детальний опис першого проєкту.</p>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="#" class="btn-main" data-i18n="btn-see">ДИВИТИСЬ</a>
+                        <a href="#" class="btn-main" data-i18n="btn-dow">СКАЧАТИ</a>
+                        <button class="btn-main about-trigger" data-i18n="btn-about">ПРО НАС</button>
+                    </div>
+                </div>
+            </div>
+ -->
+            <div class="searchable" data-category="js">
+                <div class="app-grid">
+                    <div class="image-card">
+                        <img src="" alt="Sketch" onerror="this.style.display='none'">
+                        <div class="search-data" style="display: none;">javascript розробка проєкт 2</div>
+                        
+                        <div class="about-content" style="display: none;">
+                            <h3 class="res-title" data-i18n="proj2-title">JS ЗАСТОСУНОК</h3>
+                            <p class="about-text" data-i18n="proj2-desc">Опис другого проєкту про скрипти.</p>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="#" class="btn-main" data-i18n="btn-see">ДИВИТИСЬ</a>
+                        <a href="#" class="btn-main" data-i18n="btn-dow">СКАЧАТИ</a>
+                        <button class="btn-main about-trigger" data-i18n="btn-about">ПРО НАС</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+        <div class="drawer" id="aboutDrawer">
+            <div class="drawer-head">
+                <h2 id="drawerDisplayTitle" data-i18n="about-title">ІНФО</h2>
+                <button class="close-drawer-btn" id="closeDrawer">✕</button>
+            </div>
+            <div class="drawer-body">
+                <p id="drawerDisplayText" data-i18n="about-text">Завантаження...</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

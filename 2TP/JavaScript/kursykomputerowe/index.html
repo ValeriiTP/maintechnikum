@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="checkbox" id="react">
+        <label for="react">Kurs React</label><br>
+        <input type="checkbox" id="js">
+        <label for="js">Kurs JavaScript</label><br>
+        <label for="rat">Liczba Rat:</label>
+        <input type="number" id="rat"><br>
+        
+        <select id="miasto">
+            <option value="warszawa">Warszawa</option>
+            <option value="krakow">Kraków</option>
+            <option value="poznan">Poznań</option>
+            <option value="wroclaw">Wrocław</option>
+            <option value="gdansk">Gdańsk</option>
+        </select><br>
+<input type="button" id="oblicz" value="Oblicz" onclick="oblicz()">
+        <p id="wynik"></p>
+    </form>
+
+    <script>
+function oblicz(){
+    // Pobranie danych z formularza
+    let react = document.getElementById("react").checked;
+    let js = document.getElementById("js").checked;
+    let liczbaRat = document.getElementById("rat").value;
+    let miasto = document.getElementById("miasto").value;
+    
+    // Przygotowanie zmiennych
+    let kwotaCalkowita = 0;
+    
+    // Obliczenie kwoty całkowitej
+    if(react) kwotaCalkowita += 5000;
+    if(js) kwotaCalkowita += 3000;
+    
+    // Obliczenie wysokości raty
+    let rata = kwotaCalkowita / liczbaRat;
+    
+    // Wyświetlenie wyniku
+    document.getElementById("wynik").innerHTML = "Kurs odbędzie się w " + miasto + ". Koszt całkowity: " + kwotaCalkowita + " zł. Płacisz " + liczbaRat + " rat po " + rata.toFixed(2) + " zł";
+}
+    </script>
+</body>
+</html>

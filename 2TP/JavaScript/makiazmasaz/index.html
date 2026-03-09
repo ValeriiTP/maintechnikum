@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<input type="checkbox" id="peeling" value="50"> Peeling 50 zł<br>
+<input type="checkbox" id="maska" value="70"> Maska 70 zł<br>
+<input type="checkbox" id="masaz" value="100"> Masaż 100 zł<br>
+<input type="checkbox" id="makijaz" value="80"> Makijaż 80 zł<br><br>
+<button onclick="obliczCene()">Oblicz cenę</button>
+
+<p id="wynik"></p>
+
+
+<script>function obliczCene() {
+    let suma = 0;   
+    let peeling = document.getElementById("peeling").checked;
+    let maska = document.getElementById("maska").checked;
+    let masaz = document.getElementById("masaz").checked;
+    let makijaz = document.getElementById("makijaz").checked;
+
+    if (peeling) suma += 45;
+    if (maska) suma += 30;
+    if (masaz) suma += 20;
+    if (makijaz) suma += 50;
+
+    document.getElementById("wynik").innerHTML = "Cena zabiegów: " + suma + " zł";
+}</script>
+</body>
+</html>

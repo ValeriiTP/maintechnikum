@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>jschangestyle</title>
+    </head>
+    <body>
+<!--konstrukcja zmiany stylowania:
+zmienna.style.cechadozmiany= "wartość";
+
+np:
+paragraf.style.fontSize = "24px";
+
+Proszę na podstawie powyższego utworzyć kilka paragrafów które zmienią czcionki:
+kolor color
+krój fontFamily
+wielkość fontSize-->
+
+
+<p id="p">text do zmiany</p>
+
+
+
+
+
+<div id="buttons">
+    <input type="color" id="color" oninput="color()">
+    <br><br>
+    
+    <input type="number" id="font" placeholder="Size (e.g. 20)">
+    <button id="submitSize" onclick="font()">submit font size</button>
+    <br><br>
+
+    <select id="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Trebuchet MS">Trebuchet MS</option>
+    </select>
+    <button id="submitFont" onclick="fontfam()">submit font family</button>
+    <br><br>
+    
+    <button id="reset" onclick="reset()">reset</button>
+</div>
+
+
+
+
+        <script src="main.js"></script>
+    </body>
+</html>

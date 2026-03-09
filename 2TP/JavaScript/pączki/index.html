@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kalorii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Kalkulator Kalorii</h1>
+
+    <main>
+        <div class="inputs">
+            <input type="number" id="ilosc" placeholder="podaj ilość pączków">
+            <select id="typ">
+                <option value="0">wybierz rodzaj</option>
+                <option value="500">pączek dubajsky</option>
+                <option value="400">pączek czekoladowy</option>    
+                <option value="350">pączek różawy</option>
+            </select>
+
+            <div class="checkboxes">
+                <label><input type="checkbox" id="lukier"> lukier </label><br>
+                <label><input type="checkbox" id="cukier"> x2 nadzienie </label>
+            </div>
+
+            
+            
+            <button onclick="oblicz()">Oblicz</button>
+            <div id="wynik"></div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Zdjęcie</th>
+                    <th>Nazwa</th>
+                    <th>Kalorie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="dubajskipaczek.png" class="square-img"></td>
+                    <td>Pączek Dubajsky</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td><img src="czekolada.png" class="square-img"></td>
+                    <td>Pączek Czekoladowy</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td><img src="ruzawy.png" class="square-img"></td>
+                    <td>Pączek Różawy</td>
+                    <td>350</td>
+                </tr>
+
+                <tr>
+      
+      <td>
+        <img src="lukier.png" class="square-img">
+      </td>
+      <td>lukier</td>
+      <td>+100</td>
+    </tr>
+
+
+    <tr>
+      
+      <td>
+        <img src="nadzenie2x.png" class="square-img">
+      </td>
+      <td>x2 nadzienie</td>
+      <td>+200</td>
+    </tr>
+            </tbody>
+        </table>
+    </main>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
