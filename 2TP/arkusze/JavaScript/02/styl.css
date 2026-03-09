@@ -1,0 +1,53 @@
+
+* {
+    text-align: center;
+    font-family: Georgia;
+}
+header, footer {
+    background-color: tomato;
+    color: MistyRose;
+    padding: 10px;
+}
+nav {
+    width: 20%;
+}
+#baza, #opisy, #galeria {
+    background-color: #FFAEA5;
+    height: 170px;
+    font-size: 200%;
+}
+#baza {
+    background-color: MistyRose;
+}
+main {
+    background-color: MistyRose;
+    width: 80%;
+    height: 510px;
+    overflow: auto;
+}
+#sekcja2, #sekcja3 {
+    display: none;
+}
+table {
+    margin: auto;
+    width: 60%;
+    border: 1px dashed Indigo;
+}
+select, button {
+    margin: 20px;
+}
+dt {
+    font-weight: bold;
+    font-style: italic;
+}
+dt:hover {
+    font-size: 180%;
+}
+
+
+#position{
+    display: flex;
+}
+body{
+    margin: 0;
+}
