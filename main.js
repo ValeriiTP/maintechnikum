@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "about-text": "Loading...",
             "proj1-title": "PROJECT: ARTICLE 55021",
             "proj1-desc": "This is a detailed description of the first project. Architecture and design info here.",
-            "proj2-title": "JS APPLICATION",
-            "proj2-desc": "Description of the second project. It covers JavaScript scripts and functionality."
+            "proj2-title": "Project 64",
+            "proj2-desc": "Project 64 - JS - style visibility :)"
         },
         pl: {
             "nav-title": "MENU",
@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
             "latest": "NOWE",
             "btn-see": "ZOBACZ",
             "btn-dow": "POBIERZ",
-            "btn-about": "O NAS",
+            "btn-about": "O PROJEKCIE",
             "about-title": "INFO",
             "about-text": "Ładowanie...",
             "proj1-title": "PROJEKT: ARTYKUŁ 55021",
             "proj1-desc": "To jest szczegółowy opis pierwszego projektu. Informacje o architekturze i designie.",
-            "proj2-title": "APLIKACJA JS",
-            "proj2-desc": "Opis drugiego projektu. Zawiera informacje o skryptach i funkcjonalności JavaScript."
+            "proj2-title": "projekt 64",
+            "proj2-desc": "Projekt 64 - JS - style visibility :)"
         }
     };
 
